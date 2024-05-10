@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    /* set the CSS */
+
+    .node circle {
+        fill: #fff;
+        stroke: steelblue;
+        stroke-width: 3px;
+    }
+
+    .node text {
+        font: 12px sans-serif;
+    }
+
+    .node--internal text {
+        text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+    }
+
+    .link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 2px;
+    }
+
+    .charset {
+        width: 650px;
+        height: 550px;
+    }
+
+    .charset1 {
+        width: 700;
+        height: 500px;
+    }
+
+    .charset2 {
+        width: 700;
+        height: 500px;
+    }
+
+    .row {
+        background-color: red;
+        height: 10px;
+        width: 200px;
+    }
+</style>
+
+<body>
+    <!-- load the d3.js library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"
+        integrity="sha512-FHsFVKQ/T1KWJDGSbrUhTJyS1ph3eRrxI228ND0EGaEp6v4a/vGwPWd3Dtd/+9cI7ccofZvl/wulICEurHN1pg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="./main.js"></script>
+    <main>
+        <div class="charset"></div>
+        <button id="btn1">"все населення, тис.чол."</button>
+        <button id="btn2">"жіноче населення, тис.чол"</button>
+        <div class="charset1"></div>
+        <div class="charset2">
+            <button id="leaves">Leaves</button>
+        </div>
+
+    </main>
+</body>
